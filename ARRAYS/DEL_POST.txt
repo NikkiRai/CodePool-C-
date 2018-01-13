@@ -1,0 +1,23 @@
+* Delete By Position:
+
+#include<iostream.h>
+#include<conio.h>
+void main()
+{ clrscr();
+int a[30],n,k;
+cout<<"Enter the string length (<=30 ) \n";
+cin>>n;
+cout<<"\nEnter any "<<n<<" Integers \n";
+for(int i=0;i<=n-1;i++)
+ cin>>a[i];
+cout<<"\nEnter the position to be deleted \n";
+cin>>k;
+k--;
+for(i=k;i<=n-2;i++)
+a[i]=a[i+1];
+n--;
+cout<<"\nNew array is:- \n";
+for(i=0;i<=n-1;i++)
+cout<<a[i]<<' ';
+getch();
+}

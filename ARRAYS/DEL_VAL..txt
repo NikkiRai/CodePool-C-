@@ -1,0 +1,32 @@
+* Delete by value:
+
+#include<iostream.h>
+#include<conio.h>
+void main()
+{ clrscr();
+int a[30],i,n,j,k=-1,num;
+
+cout<<"Enter String Length:(< 30) \n";
+cin>>n;
+
+cout<<" \n Enter any "<<n<<" sorted integers: \n";
+for(i=0;i<=n-1;i++)
+cin>>a[i];
+cout<<"\nEnter number to be deleted:\n";
+cin>>num;
+   i=0;
+while(a[i]!=num && i<=n-1)
+i++;
+if (a[i]==num)
+{ k=i;
+ for(j=k;j<=n-2;j++)
+ a[j]=a[j+1];
+ n--;     }
+ else
+ cout<<'\n'<<
+ num<<" "<<"not found for deletion\n";
+ cout<<"\nNew array is:\n";
+ for(i=0;i<=n-1;i++)
+ cout<<a[i]<<" ";
+ getch();
+ }

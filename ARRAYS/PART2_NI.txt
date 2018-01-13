@@ -1,0 +1,28 @@
+* Alternative of counting the digits,capital letters,
+  small case vowels and blanks in an array:
+ 
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+#include<ctype.h>
+void main()
+{ clrscr();
+char a[30];
+int n,c,d,v,b;
+c=d=v=b=0;
+cout<<"Enter String (25)";
+gets(a);int i=0;
+while(a[i]!='\0')
+ {
+ if (isspace(a[i])) b++;
+else if (isupper(a[i])) c++;
+else if (isdigit(a[i])) d++;
+else if(a[i]=='a' || a[i]=='e' || a[i]=='i' || a[i]=='o' || a[i]=='u') v++;
+i++; }
+cout<<'\n';
+cout<<"Digits="<<d<<'\n';
+cout<<"Capital Letters="<<c<<'\n';
+cout<<"Small Case Vowels="<<v<<'\n';
+cout<<"Blanks="<<b<<'\n';
+getch();
+}

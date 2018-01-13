@@ -1,0 +1,34 @@
+=> STANDARD DEVIATION AND VARIANCE:
+
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{  clrscr();
+int a[50],i;
+float avg,n,t;
+double SD,div,x,sum,term;
+
+cout<<"Enter the length of the array:\n";
+cin>>n;
+cout<<"Enter any  "<<n<<" integers:\n";
+for(i=0;i<=n-1;i++)
+ { cin>>a[i];
+t+=a[i];}
+avg=t/n;
+
+sum=x=term=0;
+for(i=0;i<=n-1;i++)
+
+{ x=a[i]-avg;
+term=pow(x,2);
+sum+=term;
+  }
+ div=(sum/n);
+ SD=sqrt(div);
+
+cout<<"\nStandard Deviation=\n"<<SD;
+
+cout<<"\nVariance=\n"<<div;
+getch();
+		}

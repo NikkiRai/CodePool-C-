@@ -1,0 +1,29 @@
+* Insert a new element such that the array remains sorted:
+
+#include<iostream.h>
+#include<conio.h>
+void main()
+{ clrscr();
+int a[30],num,n,i,k=-1;
+
+cout<<"Enter String Length:(< 30) \n";
+cin>>n;
+
+cout<<" \n Enter your integers: \n";
+for(i=0;i<=n-1;i++)
+cin>>a[i];
+cout<<"\n Enter The number to be inserted: \n";
+cin>>num;
+i=0;
+while((a[i]<num) && (i<=n-1))
+i++;
+k=i;
+for( i=n-1;i>=k;i--)
+a[i+1]=a[i];
+a[k]=num;
+n++;
+cout<<" \n New array is: \n";
+for(i=0;i<=n-1;i++)
+cout<<a[i]<<' ';
+getch();
+}

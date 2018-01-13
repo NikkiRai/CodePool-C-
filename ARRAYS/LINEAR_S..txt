@@ -1,0 +1,25 @@
+* Linear Search:
+
+#include<iostream.h>
+#include<conio.h>
+void main()
+{ clrscr();
+int a[30],i,n,num,pos;
+cout<<"Enter String Length:(< 30) \n";
+cin>>n;
+
+cout<<" \n Enter any "<<n<<" integers: \n";
+for(i=0;i<=n-1;i++)
+cin>>a[i];
+cout<<" \nEnter number to be searched:\n";
+cin>>num;
+i=0;pos=-1;
+while(a[i]!=num && i<=n-1)
+i++;
+if(i==n)
+cout<<num<<" not found";
+else
+{ pos=i;
+cout<<num<<" found at"<<" "<<pos+1;}
+getch();
+}

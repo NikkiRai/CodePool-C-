@@ -1,0 +1,25 @@
+* Occurances:
+
+#include<iostream.h>
+#include<conio.h>
+void main()
+{ clrscr();
+int a[30],n,num,c;
+c=0;
+cout<<"Enter String Length (< 30): \n";
+cin>>n;
+cout<<"Enter number to be checked: \n";
+cin>>num;
+cout<<"Enter your integers: \n";
+for(int i=0;i<=n-1;i++)
+{
+cin>>a[i];
+if (a[i]==num)
+ c++;
+    }
+if(c>0)
+cout<<"Number of occurances of "<<num<<" is "<<c;
+else
+cout<<"Number not found !";
+getch();
+}
